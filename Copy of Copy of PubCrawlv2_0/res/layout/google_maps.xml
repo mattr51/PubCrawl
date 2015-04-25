@@ -31,7 +31,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_alignParentLeft="true"
-            android:text="I want to stop" />
+            android:text="Quit" />
 
         <Button
             android:id="@+id/achieve"
@@ -39,8 +39,7 @@
             android:layout_height="wrap_content"
             android:layout_above="@+id/stop"
             android:layout_alignParentLeft="true"
-            android:layout_marginBottom="30dp"
-            android:text="I have achieved this bar" />
+            android:text="Arrived" />
 
     </RelativeLayout>
 

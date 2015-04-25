@@ -7,23 +7,20 @@
     <uses-sdk
         android:minSdkVersion="8"
         android:targetSdkVersion="21" />
- <permission
+
+    <permission
         android:name="com.version1_0.ClubCrawl.permission.MAPS_RECEIVE"
         android:protectionLevel="signature" />
 
     <uses-permission android:name="com.version1_0.ClubCrawl.permission.MAPS_RECEIVE" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-
     <uses-permission android:name="android.permission.INTERNET" />
-
     <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
-
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <!-- Required to show current location -->
 
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <!-- Required OpenGL ES 2.0. for Maps V2 -->
@@ -47,6 +44,7 @@
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
+
         <activity
             android:name="com.version1_0.ClubCrawl.DrinkSelection"
             android:label="@string/app_name" >
@@ -58,8 +56,9 @@
         </activity>
         <activity android:name=".HelpPage" >
             <intent-filter>
-                <action android:name="android.intent.action.HelpPage"/>
-                <category android:name="android.intent.catergory.DEFAULT"/>
+                <action android:name="android.intent.action.HelpPage" />
+
+                <category android:name="android.intent.catergory.DEFAULT" />
             </intent-filter>
         </activity>
         <activity android:name=".Register" >
@@ -76,39 +75,27 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity 
-            android:name=".DrinkSelection">
+        <activity android:name=".PlanCrawl" >
             <intent-filter>
-                <action android:name="android.intent.action.DrinkSelection"/>
-                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="android.intent.action.PlanCrawl" />
+
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
-            
-         </activity>
-         <activity 
-            android:name=".PlanCrawl">
+        </activity>
+        <activity android:name="com.version1_0.GoogleMap.GoogleMaps" >
             <intent-filter>
-                <action android:name="android.intent.action.PlanCrawl"/>
-                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="android.intent.action.GoogleMaps" />
+
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
-            
-         </activity>
-         
-         <activity 
-            android:name="com.version1_0.GoogleMap.GoogleMaps">
+        </activity>
+        <activity android:name="com.version1_0.GoogleMap.ShowNearestClubs" >
             <intent-filter>
-                <action android:name="android.intent.action.GoogleMaps"/>
-                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="android.intent.action.QuickDrink" />
+
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
-            
-         </activity>
-         <activity 
-            android:name="com.version1_0.GoogleMap.ShowNearestClubs">
-            <intent-filter>
-                <action android:name="android.intent.action.QuickDrink"/>
-                <category android:name="android.intent.category.DEFAULT"/>
-            </intent-filter>
-            
-         </activity>
+        </activity>
         <activity
             android:name="com.version1_0.ClubCrawl.SetClock"
             android:label="@string/app_name" >

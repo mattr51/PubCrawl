@@ -1,10 +1,10 @@
 <!-- Useful Link http://stackoverflow.com/questions/13855049/how-to-show-multiple-markers-on-mapfragment-in-google-map-api-v2 -->
-
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/appbackgroundmain"
     tools:context="com.example.baronimo.QuickDrink"
     tools:ignore="MergeRootFrame" >
 

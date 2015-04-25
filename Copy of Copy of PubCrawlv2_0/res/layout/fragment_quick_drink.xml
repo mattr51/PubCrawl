@@ -21,18 +21,10 @@
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
-            android:text="The nearest 3 Clubs are shown below" 
+            android:text="The nearest 3 pubs are shown below" 
             android:textColor="#000000"
             android:textSize="30sp"
             />
-
-        <Button
-            android:id="@+id/stop"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentLeft="true"
-            android:text="I want to stop" />
 
         <Button
             android:id="@+id/startMyTrip"
@@ -40,8 +32,15 @@
             android:layout_height="wrap_content"
             android:layout_above="@+id/stop"
             android:layout_alignParentLeft="true"
-            android:layout_marginBottom="30dp"
-            android:text="Start my trip" />
+            android:text="Start" />
+
+        <Button
+            android:id="@+id/stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:text="Quit" />
 
     </RelativeLayout>
 

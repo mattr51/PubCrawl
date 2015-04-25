@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:textColor="#000000"
-        android:text="I will leave at :"
+        android:text="Set Timer :"
         android:textSize="40sp" />
 
     <LinearLayout
@@ -25,14 +25,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="Start"
-            android:text="Set Clock" />
+            android:text="Set Clock" 
+            android:layout_marginLeft="50dp"/>
 
         <Button
             android:id="@+id/cancelClock"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="Cancel"
-            android:text="Cancel" />
+            android:text="Cancel" 
+            android:layout_marginLeft="40dp"/>
     </LinearLayout>
     
     <TextView
