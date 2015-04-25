@@ -10,7 +10,7 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:textColor="#000000"
+         android:textColor="#FFFFFF"
         android:text="Set Timer :"
         android:textSize="40sp" />
 
@@ -34,7 +34,8 @@
             android:layout_height="wrap_content"
             android:onClick="Cancel"
             android:text="Cancel" 
-            android:layout_marginLeft="40dp"/>
+            android:layout_marginLeft="40dp"
+            />
     </LinearLayout>
     
     <TextView
@@ -42,14 +43,15 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:textColor="#000000"
-        android:text="Rest Clubs"
-        android:textSize="30sp" />
+        android:text="Other Pubs:"
+        android:textSize="30sp"
+         android:textColor="#FFFFFF" />
 
     <ListView
          android:id="@android:id/list"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="" />
+        android:text="" 
+         android:textColor="#FFFFFF"/>
 
 </LinearLayout>
