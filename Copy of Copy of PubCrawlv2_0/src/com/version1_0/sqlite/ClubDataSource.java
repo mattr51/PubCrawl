@@ -88,28 +88,7 @@ public class ClubDataSource {
 		return clubs;
 	}
 
-	public RegisteredUser getUserInformation(String userName, String passWord) {
-		RegisteredUser user=new RegisteredUser();
-		String[] args={userName};
-
-		Cursor cursor = database.query(RUSQLiteHelper.TABLE_COMMENTS,
-				allColumns, RUSQLiteHelper.COLUMN_USERNAME + " = ?",
-				args, null, null, null);
-		Log.i(String.valueOf(cursor.getCount()),String.valueOf(cursor.getCount()));
-		if(cursor.getCount()>0){
-			cursor.moveToFirst();
-			user.setUserName(cursor.getString(0));
-			user.setPassword(cursor.getString(1));
-			cursor.close();
-			return user;
-		}else{
-			cursor.close();
-			return null;
-		}
 		
-		
-	}
-
 	private Club cursorToClub(Cursor cursor) {
 		Club club = new Club(cursor.getString(1), cursor.getDouble(2), cursor.getDouble(3));
 		
